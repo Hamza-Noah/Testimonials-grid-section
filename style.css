@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEEEEE;
+  }
+  
+  .container {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(4);
+    grid-template-rows: repeat(4);
+    width: 1200px;
+    margin: 50px auto;
+  }
+  
+  .item {
+    background-color: white;
+    padding: 40px 20px;
+    border-bottom: 3px solid #FD4D15;
+    position: relative;
+  }
+  
+  .item::after {
+   
+    content: '"';
+    position: absolute;
+    right: 20px;
+    bottom: -15px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ACAAAA;
+    transform: rotate(15deg);
+  }
+  
+  .item h2+span {
+    color: #ACAAAA;
+    font-weight: bolder;
+    display: block;
+    margin: 10px 0 15px;
+  }
+  
+  .item p {
+  
+    line-height: 1.5;
+  }
+  
+  .item p:first-of-type {
+    font-weight: bolder;
+    margin: 20px 0;
+  }
+  
+  .item:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .item:nth-of-type(2) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .item:nth-of-type(3) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: black;
+    color: white;
+  }
+  
+  .item:nth-of-type(4) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  
+  .item:nth-of-type(5) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: black;
+    color: white;
+  }
+  
+  .item:nth-of-type(6) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  
+  .item:nth-of-type(7) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  
+  .item:nth-of-type(8) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: black;
+    color: white;
+  }
+  
+  .item:nth-of-type(9) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  
+  .item:nth-of-type(10) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
