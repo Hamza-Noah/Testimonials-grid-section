@@ -11,7 +11,7 @@
   
   .container {
     display: grid;
-    grid-gap: 12px;
+    grid-gap: 30px;
     grid-template-columns: repeat(3);
     grid-template-rows: repeat(2);
     width: 1200px;
@@ -21,8 +21,8 @@
   .item {
     background-color: white;
     padding: 40px 20px;
-    border-bottom: 3px solid #FD4D15;
     position: relative;
+    border-radius: 10q;
   }
   
   .item::after {
@@ -93,39 +93,3 @@
     color: white;
   }
   
-  .item:nth-of-type(6) {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-  
-  .item:nth-of-type(7) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
-  
-  .item:nth-of-type(8) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background-color: black;
-    color: white;
-  }
-  
-  .item:nth-of-type(9) {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
-  
-  .item:nth-of-type(10) {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
