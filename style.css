@@ -93,7 +93,7 @@ img {
   grid-column: 4/5;
   grid-row: 1/2;
   color: white;
-  background-color: var(--Very-dark-blackish-blue);
+  background-color: var(--Very-dark-grayish-blue);
 }
 
 .item:nth-of-type(3) {
@@ -111,6 +111,6 @@ img {
 .item:nth-of-type(5) {
   grid-column: 2/4;
   grid-row: 2/3;
-  background-color: var(--Very-dark-grayish-blue);
+  background-color: var(--Very-dark-blackish-blue);
   color: white;
 }
