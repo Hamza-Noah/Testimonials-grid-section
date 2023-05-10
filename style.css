@@ -53,6 +53,7 @@ img {
   padding: 40px 20px;
   position: relative;
   border-radius: 10Q;
+  box-shadow: 0 10px hsl(210, 46%, 95%);
 }
 
 .item::after {
@@ -71,10 +72,11 @@ img {
   font-weight: bolder;
   display: block;
   margin: 10px 0 15px;
+  opacity: 50%;
 }
 
-.item p {
-  line-height: 1.5;
+.item h2 + span + p {
+  line-height: 1.7;
 }
 
 .item p:first-of-type {
@@ -83,7 +85,7 @@ img {
 }
 
 .item:first-of-type {
-  grid-column: 1/ span 2;
+  grid-column: 1 / span 2;
   grid-row: 1;
   background-color: var(--Moderate-violet);
   color: white;
@@ -100,12 +102,14 @@ img {
   grid-column: 4;
   grid-row: 1 / span 2;
   background-color: var(--White);
-  color: white;
+  color: hsl(217, 19%, 35%);
+
 }
 
 .item:nth-of-type(4) {
   grid-column: 1;
   grid-row: 2;
+  color: hsl(217, 19%, 35%);
 }
 
 .item:nth-of-type(5) {
