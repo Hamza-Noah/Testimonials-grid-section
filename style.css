@@ -67,6 +67,10 @@ img {
   transform: rotate(15deg);
 }
 
+.item h2 {
+  font-size: 1rem;
+}
+
 .item h2 + span {
   color: #acaaaa;
   font-weight: bolder;
@@ -75,7 +79,11 @@ img {
   opacity: 50%;
 }
 
-.item h2 + span + p {
+.item p {
+  font-size: 1.5rem;
+}
+
+.item figcaption {
   line-height: 1.7;
 }
 
@@ -103,7 +111,6 @@ img {
   grid-row: 1 / span 2;
   background-color: var(--White);
   color: hsl(217, 19%, 35%);
-
 }
 
 .item:nth-of-type(4) {
